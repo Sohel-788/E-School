@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <!-- Navbar Start -->
@@ -22,26 +23,26 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active smooth-menu">
                             <a class="nav-link" href="#books">Books <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item smooth-menu">
                             <a class="nav-link" href="#courses">Courses</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item smooth-menu">
                             <a class="nav-link" href="#others">Others</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item smooth-menu">
                             <a class="nav-link" href="#blocks">Blocks</a>
-                        </li>
-                        <li class="nav-item action-btn">
-                            <a class="nav-link" href="#signin">Sign In</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <div class="signin-btn d-none d-lg-inline-block">
+                <a href="#" class="btn-filled">Sign In</a>
+            </div>
         </div>
     </div>
     <div class="header-text">
@@ -67,51 +68,60 @@
 </div>
 
 <!-- meta section -->
-<div class="meta-area">
+<div class="meta-area" id="books">
     <div class="container">
-        <div class="card-deck">
-            <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
-                <div class="meta-img">
-                    <img src="img/book.png" class="card-img-top" alt="...">
+        <div class="row">
+            <div class="card-deck">
+                <div class="col-md-3">
+                    <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
+                        <div class="meta-img">
+                            <img src="img/book.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">1500+ Topics</h2>
+                            <p class="card-text">This is a longer card with </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body text-center">
-                    <h2 class="card-title">1500+ Topics</h2>
-                    <p class="card-text">This is a longer card with </p>
+                <div class="col-md-3">
+                    <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
+                        <div class="meta-img">
+                            <img src="img/Student.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">1500+ Topics</h2>
+                            <p class="card-text">This card has supporting</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
-                <div class="meta-img">
-                    <img src="img/Student.png" class="card-img-top" alt="...">
+                <div class="col-md-3">
+                    <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
+                        <div class="meta-img">
+                            <img src="img/Students.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">1500+ Topics</h2>
+                            <p class="card-text">This is a wider card with.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body text-center">
-                    <h2 class="card-title">1500+ Topics</h2>
-                    <p class="card-text">This card has supporting</p>
-                </div>
-            </div>
-            <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
-                <div class="meta-img">
-                    <img src="img/Students.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body text-center">
-                    <h2 class="card-title">1500+ Topics</h2>
-                    <p class="card-text">This is a wider card with.</p>
-                </div>
-            </div>
-
-            <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
-                <div class="meta-img">
-                    <img src="img/Test.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body text-center">
-                    <h2 class="card-title">1500+ Topics</h2>
-                    <p class="card-text">This is a wider card with</p>
+                <div class="col-md-3">
+                    <div class="card d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
+                        <div class="meta-img">
+                            <img src="img/Test.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">1500+ Topics</h2>
+                            <p class="card-text">This is a wider card with</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Card area -->
-<div class="card-area">
+<div class="card-area" id="courses">
     <div class="container">
         <h1 class="text-center">Online Courses</h1>
         <div class="card-deck">
@@ -177,9 +187,119 @@
     </div>
 
 </div>
+<!-- Testimonial area -->
+<div id="testimonial">
+    <div class="container" id="others">
+        <h1 class="d-flex justify-content-center">Testimonial</h1>
+        <div class="col-md-8 offset-md-2">
+            <div class="testimonial-info">
+                <img src="Photos/Man.png" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam distinctio tempore ipsa at quasi, molestias facilis laboriosam architecto fugit suscipit ab sunt. Ratione magni fuga cupiditate doloremque! Esse, blanditiis.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer-area">
+    <div class="container" id="blocks">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptates incidunt numquam alias dolores! Doloribus.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-link">
+                                <ul>
+                                    <li class="course-title">
+                                        <a href="#">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-link">
+                                <ul>
+                                    <li class="course-title">
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-link">
+                                <ul>
+                                    <li class="course-title">
+                                        <a href="#">Useful Links</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center">
+            <p>All rights reserved by Sohel Mahmud</p>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
 
 <body>
 

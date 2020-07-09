@@ -37,6 +37,10 @@ p {
 
 /* Header area css */
 
+.container {
+    position: relative;
+}
+
 #header {
     padding-top: 10px;
     padding-bottom: 100px;
@@ -54,6 +58,7 @@ p {
 
 .header-top {
     padding-bottom: 100px;
+    position: relative;
 }
 
 #header .navbar-brand img {
@@ -71,21 +76,26 @@ p {
     transition: all 1s ease-in;
 }
 
-.navbar-light .navbar-nav .nav-item:hover .action-btn {
-    transition: none;
+.navbar-nav {
+    padding-right: 90px;
 }
 
-.navbar-light .navbar-nav .action-btn {
+.signin-btn .btn-filled {
+    text-decoration: none;
+    padding: 10px 30px;
     border-radius: 50px;
     background-color: #21B573;
+    display: inline-block;
 }
 
-.navbar-light .navbar-nav .action-btn a {
+.signin-btn .btn-filled {
     color: #fff;
 }
 
-.navbar-light .navbar-nav .action-btn:hover a {
-    color: #fff;
+.signin-btn {
+    position: absolute;
+    right: 0;
+    top: 40px;
 }
 
 
@@ -112,6 +122,15 @@ p {
 
 
 /* Header section end */
+
+
+/* Course area */
+
+.card-area h1 {
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-weight: 700;
+}
 
 .meta-area {
     padding: 100px 0;
@@ -168,4 +187,79 @@ a {
 .right img {
     width: 24px;
     height: 24px;
+}
+
+
+/* Testimonial area */
+
+#testimonial {
+    padding: 100px;
+}
+
+#testimonial h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.testimonial-info img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+}
+
+.testimonial-info p {
+    font-size: 15px;
+    color: #333;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+#footer-area {
+    background-color: #282531;
+    padding-top: 100px;
+}
+
+.footer-text {
+    color: rgb(201, 201, 201);
+    font-size: 15px;
+}
+
+.footer-link ul {
+    list-style-type: none;
+}
+
+.footer-link ul li a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-link ul li:hover a {
+    margin-left: 5px;
+    transition: all .3s ease-in-out;
+    color: rgb(160, 160, 160);
+}
+
+.footer-link ul li:first-child a {
+    margin-left: 0;
+    color: #fff;
+}
+
+.footer-link ul li.course-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.footer-bottom {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    color: rgb(184, 184, 184);
+    font-size: 14px;
 }
