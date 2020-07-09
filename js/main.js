@@ -10,17 +10,6 @@
         $(".header-top").sticky({ topSpacing: 0 });
 
 
-        //jQuery Smooth scroll 
-        $('li.smooth-menu a').bind('click', function(event) {
-            var $anchor = $(this);
-            var headerH = '66';
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
-            }, 1200, 'easeInOutQuint');
-            event.preventDefault();
-        });
-
-
 
 
 
