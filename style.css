@@ -196,7 +196,8 @@ a {
     padding: 100px;
 }
 
-#testimonial h1 {
+#testimonial h1,
+.google-map h1 {
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 80px;
@@ -215,6 +216,17 @@ a {
     margin-left: 30px;
     overflow: hidden;
 }
+
+
+/* Google map */
+
+.google-map {
+    background-color: #F0FFF0;
+    padding: 100px 0;
+}
+
+
+/* foote are */
 
 #footer-area {
     background-color: #282531;
